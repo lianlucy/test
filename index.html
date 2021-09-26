@@ -22,10 +22,28 @@
     </script>
   </head>
   <body>
-    <div class="works-section" id="work">
+    <div class="works-section" id="toKorea">
       <div class="works-header">
-        <h3>works</h3>
-        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. </p>
+        <h3>중국 -> 한국</h3>
+        <p>
+          1. 비행기표 구매
+          2. 온라인 격리면제서 제출서류 준비
+            - 격리면제 동의서 서식2 (overseas.mofa.go.kr 에서 민원정보마당/코로나19공지/첫번째 공지의 첨부2파일)
+            - 격리면제 동의서 서식3 (overseas.mofa.go.kr 에서 민원정보마당/코로나19공지/첫번째 공지의 첨부2파일)
+            - 예방접종증명서(스캔 or 사진 가능)
+            - 여권사본(스캔 or 사진 가능)
+            - 가족관계증명서(efamily.scourt.go.kr 에서 pdf파일로 발급 가능)
+            - 비행기표 (여권성명/여권번호/출국일시 정보 있는 예약정보나 전자항공권 가능)
+            - 거류증(스캔 or 사진 가능)
+          3. 온라인 격리면제서 등록 (consul.mofa.go.kr)
+          4. 3번에서 격리면제 허가가 떨어지면 이메일로 격리허가서를 받고 3부 출력
+          5. 출국 72시간 이내에 핵산검사 후 검사결과서 영문 원본 준비
+          6. 공항 이동후 핵산검사 검사결과서 제출
+          7. 비행기표 받은 후 중국세관 QR코드 등록 
+          8. 한국 도착후 격리허가서 제출/자가격리자 안전보호 앱 설치
+          9. 16:30분 이전 도착시 당일 핵산검사 이후 도착시 명일 핵산검사
+          10. 일주일후 2차 핵산검사
+		</p>
       </div>
       <div class="portfolio-section-bottom-row" id="portfolio">
         <div class="container">
@@ -50,7 +68,75 @@
           <div class="sap_tabs">
             <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
               <ul class="resp-tabs-list">
-                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li>
+                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Image</span></li>
+                <div class="clearfix"></div>
+              </ul>	
+              <div id="portfoliolist">
+                <div class="resp-tabs-container">
+                  <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                    <div class="tab_img">
+                      <div class="col-md-3 img-top grid_box">
+                        <a href="images/pic-1.jpg" class="swipebox"  title="Image Title">
+                          <img src="images/pic-1.jpg" class="img-responsive" alt="">
+                          <span class="zoom-icon"></span> 
+                        </a>
+                      </div>
+                      <div class="col-md-3 img-top grid_box">
+                        <a href="images/pic-2.jpg" class="swipebox"  title="Image Title">
+                          <img src="images/pic-2.jpg" class="img-responsive" alt="">
+                          <span class="zoom-icon"></span> 
+                        </a>
+                      </div>
+                      <div class="clearfix"></div>	
+                    </div>
+                  </div>								
+                </div>	
+              </div>
+            </div>
+          </div>				
+        </div>
+      </div>
+    </div>
+    <div class="works-section" id="toChina">
+      <div class="works-header">
+        <h3>한국 -> 중국</h3>
+        <p>
+          1. 비행기표 구매
+          2. 출국 48시간 이내에 중국대사관 지정병원에서 핵산검사/항체검사 실시
+          3. 검사결과서를 발급받아 hrhk.cs.mfa.gov.cn 에서 QR코드 등록
+          4. 등록후 QR코드가 녹색으로 변경되어야 비행기표를 받을 수 있음
+          5. 비행기표 받은 후 중국세관 QR코드 등록
+          6. 중국 도착후 핵산검사 및 도착공항도시 3일 격리 + 사는곳 11일 격리(호텔 도착하고 핵산검사)
+          7. 중국 공안에서 전화가 옴
+            - 격리중인지 확인
+            - 격리호텔 확인
+            - 집주소 확인
+		</p>
+      </div>
+      <div class="portfolio-section-bottom-row" id="portfolio">
+        <div class="container">
+          <script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+          <script type="text/javascript">
+            $(document).ready(function () {
+              $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion           
+                width: 'auto', //auto or any width like 600px
+                fit: true   // 100% fit in a container
+              });
+            });
+          </script>
+          <link rel="stylesheet" href="css/swipebox.css">
+          <script src="js/jquery.swipebox.min.js"></script> 
+          <script type="text/javascript">
+            jQuery(function($) {
+              $(".swipebox").swipebox();
+            });
+          </script>
+          <!-- Portfolio Ends Here -->
+          <div class="sap_tabs">
+            <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+              <ul class="resp-tabs-list">
+                <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Image</span></li>
                 <div class="clearfix"></div>
               </ul>	
               <div id="portfoliolist">
